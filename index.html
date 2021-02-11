@@ -1,0 +1,59 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Authentication with Firebase and Emails</title>
+    </head>
+    <body>
+        <h1>Authentication Form for Firebase 2021</h1>
+        <div id = "formContainer">
+                <div id = "header"></div>
+                <input type = "email" placeholder = "email" id = "email"/>
+                <input type = "password" placeholder="password" id = "password" />
+                <br><br>
+                <button onclick="signUp()" id = "signUpButton">Sign Up</button>
+                <button onclick="signIn()" id = "signInButton">Sign In</button>
+                <button onclick="signOut()" id = "signOutButton">Sign Out</button>
+
+        </div>
+		
+		<br><br>
+		<div id = "studentDataDiv" style="display: none; background-color: aqua; padding: 20px">
+         <input id = "name" type = "text" placeholder="Name"/><br><br>
+         <input id="idNum" type = "text" placeholder="ID Num"/><br><br>
+         <input id = "age" type = "text" placeholder="Age"/><br><br>
+         <input id="year" type = "text" placeholder="Year in School or Job"/><br><br>
+         <br><br>
+         <button id="insert">Add Student Data</button>
+         <button id="showData">Show Data by Name or ID</button>
+         <button id="update">Update Existing Student Data</button>
+         <button id="delete">Delete Student by ID</button>
+       </div>
+		
+        <!-- Copy Firebase SDK info here-->
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+            <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-auth.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
+
+            <!-- TODO: Add SDKs for Firebase products that you want to use
+                https://firebase.google.com/docs/web/setup#available-libraries -->
+
+            <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyD6nbzzo_gxHn7QaSxgPb_sNkD09rz-780",
+                authDomain: "introlesson-2c761.firebaseapp.com",
+                projectId: "introlesson-2c761",
+                storageBucket: "introlesson-2c761.appspot.com",
+                messagingSenderId: "824472733539",
+                appId: "1:824472733539:web:433f0af4b02ec9c4743556"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            const auth = firebase.auth(); // reference to auth services 
+			const db = firebase.firestore();
+            </script>
+        <script src="scripts/auth.js"></script>
+		<script src="scripts/realtime.js"></script>
+    </body>
+</html>
