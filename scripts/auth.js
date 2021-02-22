@@ -24,7 +24,7 @@ function signUp(){
 
     auth.createUserWithEmailAndPassword(email,password).then(()=> {
         console.log("Signed up" + email);
-		// after we successfully created the user with eamil and pw
+		// after we successfully created the user with email and pw
 		// the method returns a "promise" and we can call the .then()
 		// function that will run after this async task has completed.
 		
