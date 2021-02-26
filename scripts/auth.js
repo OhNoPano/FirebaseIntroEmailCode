@@ -42,7 +42,7 @@ function signIn(){
 
     auth.signInWithEmailAndPassword(email, password).then(()=> {
         console.log("Signed in" + email);
-		// put any action or method calls you wnat to execute
+		// put any action or method calls you want to execute
 		// after sign in has occurred
     }).catch(e => console.log(e.message));
 }
