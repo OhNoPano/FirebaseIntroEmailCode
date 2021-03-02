@@ -41,7 +41,7 @@ document.getElementById('insert').onclick = () => {
 // SEARCH/SHOW DATA FUNCTIONALITY - ONCLICK
  /*
  the two queries are searching for any documents in the database where
- the id Num mathces what was typed in the id box OR the other query searched
+ the id Num matches what was typed in the id box OR the other query searched
  for any documents where name matches what was typed in the name box
  
  assumptions - assuming id and name are unique, if NOT unique would return more
@@ -53,7 +53,7 @@ many documents in this snapshot. We can use a forEach loop to cycle through all
 the documents in the snapshot.
 
 in code, included console.log statements so you can see what these
-valuse look like when they come back from the snapshot 
+values look like when they come back from the snapshot 
  
  
  */
