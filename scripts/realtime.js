@@ -122,7 +122,7 @@ document.getElementById('update').onclick = () => {
        });
    });
 };
- 
+
 // DELETE FUNCTIONALITY - ONCLICK
 document.getElementById('delete').onclick = () => {
    ready();
